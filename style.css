@@ -17,7 +17,7 @@ body {
 }
 
 .section {
-    width: 500px;
+    width: 600px;
     margin: auto;
     padding: 40px 0;
 }
@@ -25,6 +25,10 @@ body {
 .about-header {
     text-align: center;
     padding: 20px 0;
+}
+
+.about {
+    box-shadow: 5px 5px 2px gray;
 }
 
 .about-header h2 {
@@ -39,6 +43,7 @@ body {
     gap: 20px;
 }
 
+
 .about-img {
     box-sizing: border-box;
 }
@@ -46,6 +51,7 @@ body {
 img {
     width: 250px;
     height: 250px;
+    border-radius: 10%;
 }
 
 .about {
@@ -53,11 +59,11 @@ img {
 }
 
 .btn-container {
-    width: 250px;
+    width: 100%;
     background-color: lightgray;
     border: 1px solid lightgray;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
 }
 
@@ -66,14 +72,20 @@ img {
     font-size: 1.2rem;
     border: transparent;
     color: blue;
-    background-color: lightgray;
+    background-color: transparent;
     display: block;
+    margin: 0;
+}
+
+.about-content {
+    height: 100%;
 }
 
 .content {
     display: none;
     background-color: white;
-    padding: 10px 0;
+    padding: 10px 10px;
+    width: 100%;
 }
 
 .tab-btn.active {
@@ -81,4 +93,5 @@ img {
 }
 .content.active {
     display: block;
+    width: 100%;
 }
