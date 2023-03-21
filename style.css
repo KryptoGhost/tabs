@@ -95,3 +95,24 @@ img {
     display: block;
     width: 100%;
 }
+
+@media only screen and (max-width: 450px) {
+ .section {
+    width: 90vw;
+ }   
+
+ .about-center {
+    width: 100%;
+    display: block;
+ }
+
+ .about-img {
+     display: block;
+     margin-bottom: 20px;
+    }
+    
+  img {
+     width: 100%;
+
+ }
+}
